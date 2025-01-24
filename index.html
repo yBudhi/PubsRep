@@ -1,11 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">yBudhi_</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Jumbotron -->
+    <section id="home" class="jumbotron text-center">
+      <img class="img-profile rounded-circle img-thumbnail" src="assets/profilepicture.jpg" alt="profile-pic" />
+      <h1 class="display-4">Yoga Budhi</h1>
+      <p class="lead">Customer Care Manager | Jr. Frontend Developer</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,224L21.8,240C43.6,256,87,288,131,266.7C174.5,245,218,171,262,144C305.5,117,349,139,393,165.3C436.4,192,480,224,524,234.7C567.3,245,611,235,655,197.3C698.2,160,742,96,785,74.7C829.1,53,873,75,916,117.3C960,160,1004,224,1047,245.3C1090.9,267,1135,245,1178,224C1221.8,203,1265,181,1309,149.3C1352.7,117,1396,75,1418,53.3L1440,32L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- End Jumbotron -->
+
+    <!-- About Me -->
+    <section id="about">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-md-5">
+            <p>
+              Detail-oriented and analytical professional with 13+ years of experience in network engineering and IT services. Designed and managed large-scale ISP infrastructures, ensuring 99.9% network uptime and superior customer
+              satisfaction.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <p>
+              Led cross-functional teams to resolve critical network issues, reducing downtime by 40% in high-pressure environments. Bringing innovative solutions and proven expertise to drive efficiency and reliability in IT operations.
+              Currently interested in transitioning into the field of software engineering.
+            </p>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#e2edff"
+          fill-opacity="1"
+          d="M0,224L21.8,192C43.6,160,87,96,131,112C174.5,128,218,224,262,250.7C305.5,277,349,235,393,218.7C436.4,203,480,213,524,208C567.3,203,611,181,655,165.3C698.2,149,742,139,785,154.7C829.1,171,873,213,916,218.7C960,224,1004,192,1047,192C1090.9,192,1135,224,1178,213.3C1221.8,203,1265,149,1309,138.7C1352.7,128,1396,160,1418,176L1440,192L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- End About Me -->
+
+    <!-- Start Card -->
+    <section id="projects">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>My Projects</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="assets/wifi-bdg-juara.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text text-center">Part of the team leader focused on network concepts, both logical and physical, determining device types, and assigning NOC personnel/teams to implement the Bandung Juara Wi-Fi project.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="assets/diskominfo-purwakarta.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text text-center">
+                  Part of the team leader focused on network concepts, both logical and physical, determining device types, and assigning NOC personnel/teams to implement the concept in the "Closed Network Diskominfo Purwakarta" project
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb03">
+            <div class="card">
+              <img src="assets/diskominfo-karawang.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text text-center">Responsible for coordinating the team, creating schedules to meet targets, identifying and selecting vendors, and reporting project progress to stakeholders.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#FFFFFF"
+          fill-opacity="1"
+          d="M0,96L21.8,101.3C43.6,107,87,117,131,154.7C174.5,192,218,256,262,261.3C305.5,267,349,213,393,202.7C436.4,192,480,224,524,240C567.3,256,611,256,655,229.3C698.2,203,742,149,785,138.7C829.1,128,873,160,916,197.3C960,235,1004,277,1047,256C1090.9,235,1135,149,1178,106.7C1221.8,64,1265,64,1309,64C1352.7,64,1396,64,1418,64L1440,64L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- End Card -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Jhon Placebo." />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address:</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Messages:</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Insert your messages here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#0d6efd"
+          fill-opacity="1"
+          d="M0,192L20,181.3C40,171,80,149,120,170.7C160,192,200,256,240,256C280,256,320,192,360,186.7C400,181,440,235,480,229.3C520,224,560,160,600,149.3C640,139,680,181,720,208C760,235,800,245,840,256C880,267,920,277,960,282.7C1000,288,1040,288,1080,272C1120,256,1160,224,1200,218.7C1240,213,1280,235,1320,208C1360,181,1400,107,1420,69.3L1440,32L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- End Contact -->
+
+    <!-- Footer -->
+    <footer class="text-center bg-primary text-white pb-5">
+      <p>Created with <i class="bi bi-suit-heart-fill text-danger"></i> by: <a class="text-white fw-bold" href="http://www.linkedin.com/in/yoga-budhi">yBudhi_</a></p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
