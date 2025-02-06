@@ -3,178 +3,292 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Profile</title>
+    <title>Portfolio_V3</title>
+    <!--======= Bootstraps =======-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!--======= Google Font and Icon  =======-->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /> -->
+
+    <!--======= CustomCSS =======-->
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <!-- Start Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">yBudhi_</a>
+    <!--======= Navbar =======-->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+      <div class="container-lg">
+        <a class="navbar-brand fw-bold" href="#hero">yBudhi_</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link active" aria-current="page" href="#hero">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#experience">Experience</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#certification">Certification</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-lg-none" href="#contact">Contact</a>
             </li>
           </ul>
+          <a class="btn btn-outline-dark d-none d-lg-block" href="#contact">Contact</a>
         </div>
       </div>
     </nav>
-    <!-- End Navbar -->
 
-    <!-- Start Jumbotron -->
-    <section id="home" class="jumbotron text-center">
-      <img class="img-profile rounded-circle img-thumbnail" src="assets/profilepicture.jpg" alt="profile-pic" />
-      <h1 class="display-4">Yoga Budhi</h1>
-      <p class="lead">Customer Care Manager | Jr. Frontend Developer</p>
-      <a href="https://github.com/yBudhi"><i class="bi bi-github"></i></a>
-      <a href="https://www.linkedin.com/in/yoga-budhi/"><i class="bi bi-linkedin"></i></a>
-      <a href="https://www.instagram.com/yoga_agooy/"><i class="bi bi-instagram"></i></a>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,224L21.8,240C43.6,256,87,288,131,266.7C174.5,245,218,171,262,144C305.5,117,349,139,393,165.3C436.4,192,480,224,524,234.7C567.3,245,611,235,655,197.3C698.2,160,742,96,785,74.7C829.1,53,873,75,916,117.3C960,160,1004,224,1047,245.3C1090.9,267,1135,245,1178,224C1221.8,203,1265,181,1309,149.3C1352.7,117,1396,75,1418,53.3L1440,32L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- End Jumbotron -->
-
-    <!-- About Me -->
-    <section id="about">
+    <!--======= Section_Hero  =======-->
+    <section class="hero" id="hero">
       <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <h2>About Me</h2>
+        <div class="row align-items-center">
+          <div class="col-sm-6">
+            <h1 class="display-2 fw-bold">Yoga Budhi</h1>
+            <p>I’m a network engineer specializing in customer service with a strong interest in transitioning into software engineering to develop innovative solutions.</p>
+            <p>Detail-oriented and analytical professional with more 10 years of experience in network engineering and IT services.</p>
+            <p>Currently interested in software engineering.</p>
+            <i class="bi bi-geo-alt fs-6"> BANDUNG, JB40215 </i> <br />
+            <i class="bi bi-telephone-fill fs-6"> (62) 878-2226-2332 </i> <br />
+            <i class="bi bi-envelope-fill fs-6"> ybudhi21@gmail.com</i>
           </div>
-        </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-5">
-            <p>
-              Detail-oriented and analytical professional with 13+ years of experience in network engineering and IT services. Designed and managed large-scale ISP infrastructures, ensuring 99.9% network uptime and superior customer
-              satisfaction.
-            </p>
-          </div>
-          <div class="col-md-5">
-            <p>
-              Led cross-functional teams to resolve critical network issues, reducing downtime by 40% in high-pressure environments. Bringing innovative solutions and proven expertise to drive efficiency and reliability in IT operations.
-              Currently interested in transitioning into the field of software engineering.
-            </p>
+          <div class="col-sm-6 text-center">
+            <img class="img-fluid rounded-circle img-thumbnail img-profile shadow" src="assets/profilepicture.jpg" alt="profileimg" />
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#e2edff"
-          fill-opacity="1"
-          d="M0,224L21.8,192C43.6,160,87,96,131,112C174.5,128,218,224,262,250.7C305.5,277,349,235,393,218.7C436.4,203,480,213,524,208C567.3,203,611,181,655,165.3C698.2,149,742,139,785,154.7C829.1,171,873,213,916,218.7C960,224,1004,192,1047,192C1090.9,192,1135,224,1178,213.3C1221.8,203,1265,149,1309,138.7C1352.7,128,1396,160,1418,176L1440,192L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
-        ></path>
-      </svg>
     </section>
-    <!-- End About Me -->
 
-    <!-- Start Card -->
-    <section id="projects">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>My Projects</h2>
+    <!--======= Experience  =======-->
+    <section class="experience container" id="experience">
+      <h2 class="display-5 fw-bold">Experiences</h2>
+      <div class="row">
+        <!-- Sumber Data Indonesia -->
+        <div class="col-lg col-sm-4 mt-3">
+          <div class="card">
+            <img src="assets/SDI Logo 2024.png" class="card-img-top sdi-img" alt="zetta-logo.img" />
+            <div class="card-body">
+              <h5 class="card-title">Sumber Data Indonesia, PT</h5>
+              <p class="card-text"><b>Internet Service Provider</b></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                Customer Care and Service Manager <br />
+                May 2023 - Present
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="assets/wifi-bdg-juara.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text text-center">Part of the team leader focused on network concepts, both logical and physical, determining device types, and assigning NOC personnel/teams to implement the Bandung Juara Wi-Fi project.</p>
-              </div>
+        <div class="col-lg col-sm-4 mt-3 pb-3">
+          <div class="card">
+            <img src="assets/ptcomtronicssystems_logo.jpg" class="card-img-top sdi-img" alt="comnet-logo.img" />
+            <div class="card-body">
+              <h5 class="card-title">Comtronics Systems, PT</h5>
+              <p class="card-text"><b>Internet Service Provider</b></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                Project and Service Delivery Coordinator <br />
+                Feb 2021 - Apr 2021
+              </li>
+              <li class="list-group-item">
+                Field Technical Manager <br />
+                Jan 2021 - Feb 2021
+              </li>
+              <li class="list-group-item">
+                Network Operating Centre (NOC) Manager <br />
+                Jun 2015 - Jan 2021
+              </li>
+              <li class="list-group-item">
+                NOC Engineer <br />
+                Jun 2013 - Jun 2015
+              </li>
+              <li class="list-group-item">
+                Helpdesk Coordinator <br />
+                Sept 2011 - Jun 2013
+              </li>
+              <li class="list-group-item">
+                Helpdesk Support <br />
+                Aug 2009 - Aug 2011
+              </li>
+              <li class="list-group-item">
+                Transmission Support <br />
+                Aug 2008 - Aug 2009
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--======= Education =======-->
+    <section class="education container" id="education">
+      <h2 class="display-5 fw-bold">Education</h2>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button text-bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              POLITEKNIK PIKSI GANESHA - BANDUNG, INDONESIA
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body"><strong>Sarjana Sains Terapan - Diploma IV - Manajemen Sistem Informasi - IPK 3.25</strong><br />"Analisis Sistem Inventory Barang di PT Comtronics Systems"</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button text-bg-primary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              SEKOLAH MENENGAH KEJURUAN NEGERI 4 - KLININGAN, BUAH BATU, INDONESIA
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body"><strong>Teknik Komputer dan Jaringan (TKJ) - Diploma I </strong><br />"Instalasi Jaringan Wireless Menggunakan Teknologi Wajan bolic"</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--======= Skills =======-->
+    <!-- <section class="skills container" id="skills">
+      <h2 class="display-5 fw-bold">Skills</h2>
+    </section> -->
+
+    <!--======= Projects =======-->
+    <section class="projects container" id="projects">
+      <h2 class="display-5 fw-bold">Projects</h2>
+      <div class="row">
+        <div class="col-lg- col-sm-6 mt-3">
+          <div class="card">
+            <img src="assets/wifi-bdg-juara.jpg" class="card-img-top" alt="wifibdgjuara" />
+            <div class="card-body">
+              <h5 class="card-title">Wifi Bandung Juara</h5>
+              <p class="card-text">Part of the team leader focused on network concepts, both logical and physical, determining device types, and assigning NOC personnel/teams to implement the Bandung Juara Wi-Fi project.</p>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="assets/diskominfo-purwakarta.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text text-center">
-                  Part of the team leader focused on network concepts, both logical and physical, determining device types, and assigning NOC personnel/teams to implement the concept in the "Closed Network Diskominfo Purwakarta" project
-                </p>
-              </div>
+        </div>
+        <div class="col-lg- col-sm-6 mt-3">
+          <div class="card">
+            <img src="assets/diskominfo-purwakarta.jpg" class="card-img-top" alt="diskompurwakarta" />
+            <div class="card-body">
+              <h5 class="card-title">Closed Network Diskominfo Purwakarta</h5>
+              <p class="card-text">
+                Part of the team leader focused on network concepts, both logical and physical, determining device types, and assigning NOC personnel/teams to implement the concept in the "Closed Network Diskominfo Purwakarta" project.
+              </p>
             </div>
           </div>
-          <div class="col-md-4 mb03">
-            <div class="card">
-              <img src="assets/diskominfo-karawang.jpeg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text text-center">Responsible for coordinating the team, creating schedules to meet targets, identifying and selecting vendors, and reporting project progress to stakeholders.</p>
-              </div>
+        </div>
+        <div class="col-lg- col-sm-6 mt-3 pb-3">
+          <div class="card">
+            <img src="assets/diskominfo-karawang.jpeg" class="card-img-top" alt="diskomkarawang" />
+            <div class="card-body">
+              <h5 class="card-title">Closed Network Diskominfo Karawang</h5>
+              <p class="card-text">Responsible for coordinating the team, creating schedules to meet targets, identifying and selecting vendors, and reporting project progress to stakeholders.</p>
             </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#FFFFFF"
-          fill-opacity="1"
-          d="M0,96L21.8,101.3C43.6,107,87,117,131,154.7C174.5,192,218,256,262,261.3C305.5,267,349,213,393,202.7C436.4,192,480,224,524,240C567.3,256,611,256,655,229.3C698.2,203,742,149,785,138.7C829.1,128,873,160,916,197.3C960,235,1004,277,1047,256C1090.9,235,1135,149,1178,106.7C1221.8,64,1265,64,1309,64C1352.7,64,1396,64,1418,64L1440,64L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
-        ></path>
-      </svg>
     </section>
-    <!-- End Card -->
 
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Contact Me</h2>
+    <!--======= Certification =======-->
+    <section class="certification container" id="certification">
+      <h2 class="display-5 fw-bold">Certification</h2>
+      <ol class="list-group list-group-numbered text-start">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Hacktiv8 - 2024</div>
+            UI/UX Technical Workshop
           </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="mb-3">
-              <label for="name" class="form-label">Name:</label>
-              <input type="text" class="form-control" id="name" placeholder="Jhon Placebo." />
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">SGS Indonesia - 2024</div>
+            ISO 9001:2015 Awareness - PT Sumber Data Indonesia <br />
+            ISO 45001:2018 Awareness - PT Sumber Data Indonesia <br />
+            ISO 27001:2022 Awareness - PT Sumber Data Indonesia <br />
+            ISO 20001-1 Awareness - PT Sumber Data Indonesia <br />
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Integrasi Data Nusantara, PT - 2020</div>
+            Juniper Fundamental (JNCIA Junos)
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Netkrom Solusindo, PT - 2015-2017</div>
+            Mikrotik Certified Internetworking Engineer (MTCINE) <br />
+            Mikrotik Certified Routing Engineer (MTCRE) <br />
+            Mikrotik Certified Network Associate (MTCNA) <br />
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">The Papandayan Hotel - 2015</div>
+            Table Manner Class at The Papandayan Hotel
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Trust Training Partner - 2014</div>
+            First Look Office 365 Workshop
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Badan Nasional Sertifikasi Profesi (BNSP) - 2013</div>
+            Junior Network Administrator
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">4IT - 2008</div>
+            CCNA Discovery : Working at Small-to-Medium Business or ISP <br />
+            CCNA Discovery : Networking for Home and Small Business
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!--======= Contact  =======-->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="diplay-5 fw-bold mb-4">Contact Me</h2>
+        <div class="row">
+          <div class="col-lg col-sm-4 mt-3">
+            <!-- <a href="#">ybudhi@gmail.com</a> -->
+          </div>
+          <div class="col-lg col-sm-4 mt-3">
+            <div class="social-media">
+              <a href="https://github.com/yBudhi"><i class="bi bi-github fs-2"></i></a>
+              <a href="https://www.linkedin.com/in/yoga-budhi/"><i class="bi bi-linkedin fs-2"></i></a>
+              <a href="https://www.instagram.com/yoga_agooy/"><i class="bi bi-instagram fs-2"></i></a>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address:</label>
-              <input type="email" class="form-control" id="email" placeholder="name@example.com" />
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Messages:</label>
-              <textarea class="form-control" id="message" rows="3" placeholder="Insert your messages here..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+          <div class="col-lg col-sm-4 mt-3">
+            <!-- <a href="#">+62 878-2226-2332</a> -->
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#0d6efd"
-          fill-opacity="1"
-          d="M0,192L20,181.3C40,171,80,149,120,170.7C160,192,200,256,240,256C280,256,320,192,360,186.7C400,181,440,235,480,229.3C520,224,560,160,600,149.3C640,139,680,181,720,208C760,235,800,245,840,256C880,267,920,277,960,282.7C1000,288,1040,288,1080,272C1120,256,1160,224,1200,218.7C1240,213,1280,235,1320,208C1360,181,1400,107,1420,69.3L1440,32L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"
-        ></path>
-      </svg>
     </section>
-    <!-- End Contact -->
 
-    <!-- Footer -->
-    <footer class="text-center bg-primary text-white pb-5">
-      <p>Created with <i class="bi bi-suit-heart-fill text-danger"></i> by: <a class="text-white fw-bold" href="https://github.com/yBudhi/">yBudhi_</a></p>
+    <!--======= Footer  =======-->
+    <footer class="text-center p-3 bg-body-tertiary">
+      <div>&copy; 2025. All Rights Reserved.</div>
     </footer>
-    <!-- End Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>

@@ -1,31 +1,91 @@
-.jumbotron {
-  padding-top: 6rem;
-  background-color: #e2edff;
+section [class^="container"] {
+  padding: 4rem 2rem;
+}
+@media screen and (min-width: 1024px) {
+  section [class^="container"] {
+    padding: 3rem;
+  }
+  nav [class^="container"] {
+    padding: 0 4rem;
+  }
+}
+section:not(:first-of-type) {
+  text-align: center;
+}
+section:nth-child(2n) {
+  background-color: #ecf2ff;
+}
+/* NAVBAR */
+
+.navbar {
+  background-color: #ffffff;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+}
+.navbar-nav .nav-link {
+  color: #000000;
+  font-size: 1.1rem;
+}
+.navbar-nav .nav-link:hover {
+  color: blue;
+  font-size: 1.1rem;
+  transition: all 0.5s;
+}
+@media screen and (min-width: 1024px) {
+  .navbar-nav .nav-item {
+    padding: 0 1rem;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
 }
 .img-profile {
-  width: 200px;
+  width: 15rem;
 }
-#projects {
-  background-color: #e2edff;
+
+/* HERO */
+
+section.hero {
+  background-color: #ecf2ff;
+  padding-top: 72px;
 }
-#about {
-  padding-top: 20rem;
-}
-section {
-  padding-top: 5rem;
-}
-@keyframes appear {
-  from {
-    opacity: 0;
-    scale: 0.5;
-  }
-  to {
-    opacity: 1;
-    scale: 1;
+@media screen and (min-width: 576px) {
+  section.hero {
+    text-align: center;
   }
 }
-.container {
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0;
+
+/* EXPERIENCES */
+
+section .experience {
+  font-size: 2rem;
+  margin: 1rem auto 0;
+}
+section .card {
+  border: 1px solid #000000;
+  box-shadow: 4px 4px #000000;
+  max-width: 25rem;
+  margin-inline: auto;
+}
+section .sdi-img {
+  width: 7rem;
+  margin-inline: auto;
+}
+
+.btn-outline-dark {
+  border: 1px solid #000000;
+  box-shadow: 4px 4px #000000;
+}
+.btn-outline-dark:hover {
+  box-shadow: 4px 4px blue;
+  transition: all 0.5s;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover {
+  color: chocolate;
+  transition: all 0.5s;
 }
